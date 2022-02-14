@@ -69,30 +69,7 @@ app.get('/item', (req, res) => {
     res.render("item")
 })
 
-/*app.get('/item', (req, res) => {
-    Item.find({name:name}, function (err, f)
-     {
-        if (f.length == 0) 
-        {
-            Item.insertMany({}, function (err, f) 
-            {
-                if (err) {
-                    console.log(err);
-                }
-                else {
-                    console.log("gfghhjjkkhk")
-                }
 
-            });
-        }
-    
-    else {
-        res.render("item", { lists: f });
-
-    }
-});
-
-})*/
 app.post('/list', async (req, res) => {
 
 
@@ -106,13 +83,6 @@ app.post('/list', async (req, res) => {
 
 
 })
-
-
-// To set the package to get view files 
-//app.set('view engine', 'ejs')
-//app.use(bodyParser.urlencoded({ extended: false }))
-
-
 
 
 app.get('/register', (req, res) => {
@@ -166,46 +136,6 @@ app.post("/resg", async (req, res) => {
     }
 });
 
-/*app.post("/registerdata", async (req, res) => {
-
-
-    try {
-
-        const pass = req.body.pass;
-        const cpass = req.body.cpass;
-
-
-        if (pass == cpass) {
-            const loginData = new Data({
-                name: req.body.name,
-                lname: req.body.lname,
-                email: req.body.email,
-                pass: req.body.pass,
-                cpass: req.body.cpass,
-                mobile: req.body.mobile,
-                gender: req.body.gender,
-                date: req.body.date,
-                select: req.body.select,
-
-
-
-            })
-            const dated = await loginData.save();
-            console.log(dated)
-            res.render("datasave")
-
-        }
-        else {
-            res.render("fail")
-        }
-
-
-
-    }
-    catch (error) {
-        res.status(400).send(error)
-    }
-});*/
 
 
 
@@ -276,9 +206,6 @@ app.get('/delete/:id', async (req, res) => {
 
     })
 })
-
-
-
 
 
 app.listen(port, () => {
