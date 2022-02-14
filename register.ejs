@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Hello, world!</title>
+ 
+</head>
+
+<body>
+
+  <section class="contact-from pt-4">
+    <div class="container">
+
+      <div class="row mt-5">
+        <div class="col-md-7 mx-auto">
+          <div class="form-wrapper">
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Registration form</h4>
+              </div>
+            </div>
+           
+            <form action="/resg" method="post">
+            
+           
+              <div class="row">
+                <div class="col-md-6">
+                
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" placeholder="First name" ><br><br>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+
+                    <input type="text" name="lname" class="form-control"   placeholder="Last name"><br><br>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="pass" class="form-control" placeholder="Password"><br><br>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="cpass" class="form-control"   placeholder="Conform Password"><br><br>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-control"  placeholder="Email"><br><br>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="gender"   id="inlineRadio1" value="male" >
+                      <label class="form-check-label" for="inlineRadio1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="gender"  id="inlineRadio2" value="female">
+                      <label class="form-check-label" for="inlineRadio1">Female</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="mobile" class="form-control"  placeholder="Phone number">
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="date" name="date" class="form-control">
+                  </div>
+                </div><br><br>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+
+                    <select  name="select" class="custom-select" id="exampleFormControlSelect1"
+                      value="india">
+                      <option name="select" value="select country">Select country</option>
+                      <option name="select" value="india">India</option>
+                      <option name="selest" value="USA">USA</option>
+                      <option name="select" value="France">France</option>
+                      <option name="select" value="china">China</option>
+                      <option name="select" vlaue="Japan">Japan</option>
+                    </select>
+                  </div>
+                </div>
+
+
+                <center>
+                  <div class="form-group">
+                    <input class="btn btn-first btn-md mt-456" onclick="alert('data save in the database');" type="submit" name="Register" >
+                    <a class="btn btn-first btn-md mt-456" href="/viewlist">View All</a>
+
+                  </div>
+                </center>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
